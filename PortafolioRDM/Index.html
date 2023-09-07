@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>RDM Developer</title>
+        <link href="/Content/Site.css" rel="stylesheet" type="text/css" />
+        <link href="/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <script src="https://kit.fontawesome.com/62ea397d3a.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://kit.fontawesome.com/c36a560a32.js" crossorigin="anonymous"></script>
+        <script src="/Scripts/Index.js"></script>
+        <script src="/Scripts/CV.js" defer></script>
+    </head>
+    <body>
+        <!-- <div class="bodyBG">
+            <div class="bodyBG_1"></div>
+        </div> -->
+
+        <header>
+            <div>                
+                 <h2 class="H2NET">DESARROLLADOR .NET Jr</h2>
+            </div>
+        </header>
+    <main>
+        <section class="RDM">
+            <div class="RDM-DIV1">
+                <h1> Moisés Romero Díaz</h1>
+                <h3> FullStack Jr .NET, C#, SQL, CSS, HTML, JavaScript</h3>
+    
+                <h2>PORTAFOLIO</h2>
+                <p class="lead">Recopilación de proyectos (Sitios Web, Aplicaciones Web (PWA), Web APIs) personales, realizados con el fin autodidáctico, con tecnologías: .NET, C#, SQL, HTML, CSS y JavaScript.</p>
+    
+            </div>
+            <div class="RDM-DIV2">
+                <img src="/Content/media/img/yO.jpg" />
+            </div>
+        </section>
+
+        <div class="CV" id="ContenedorCV">
+            <button class="btnCV" id="btnMostrarCV">MOSTRAR CV</button>
+            <div id="EspacioCV" class="EspacioCV"></div>
+            <button class="btnCV" id="btnDescargarCV"><a href="/Content/media/pdf/FORMATO CV Moisés Romero Díaz.pdf">DESCARGAR CV</a></button>
+        </div>
+    
+        <div class="PROYECTOS">
+            <section>
+                <h2>SISTEMA DE RESERVA DE VIAJE</h2>
+                <p>Sistema de reserva de viaje de autobús, el cual tiene la capacidad de 
+                    realizar reservas para viajes entre distintos destinos y con fechas determinadas.</p>
+                <p>Los datos se almacenan en una base de datos local cuyo motor es MSSQL.</p>
+                <p><b>Tecnologías usadas:</b> ASP.NET, C#, SQL, HTML, CSS, JavaScript.</p>
+                <div class="btnsAcciones">
+                    <button class=""><a href="#">ACCEDER &raquo;</a></button>
+                    <button onclick="MostrarImagenes('SistemaReserva')" class="">VER &raquo;</button>
+                </div>
+            </section>
+    
+            <section>
+                <h2>TO DO LIST</h2>
+                <p><b>Aplicación Web (PWA)</b> cuyas principales funciones es almacenar texto como 
+                    tareas (o notas personales), sin la implementación de Bases de datos o 
+                    motores de bases de datos, sino mediante el guardado de información <b>JSON</b>, en <b>LocalStorage</b> 
+                    programado con JavaScript.</p>
+                <p><b>Tecnologías usadas:</b> HTML, CSS, JavaScript.</p>
+                <div class="btnsAcciones">
+                    <button class=""><a target="_blank" href="https://todolistjrr.netlify.app/index.html">ACCEDER &raquo;</a></button>
+                    <button onclick="MostrarImagenes('TodoList')" class="">VER &raquo;</button>
+                </div>                
+            </section>
+    
+            <section>
+                <h2>CSS CURSE</h2>
+                <p>Sitio Web desarrollado con el fin didáctico del aprendizaje de las bases de CSS.</p>
+                <p>En éste se pueden encontrar información básica sobre el uso de CSS, así como pequeños proyectos: Calculadora básica, Galería GRID, Cronómetro, etc.</p>
+                <p><b>Tecnologías usadas:</b> HTML, CSS, JavaScript</p>
+                <div class="btnsAcciones">
+                    <button class=""><a target="_blank" href="https://csscurse.netlify.app/">ACCEDER &raquo;</a></button>
+                    <button onclick="MostrarImagenes('CSS Curse')" class="">VER &raquo;</button>
+                </div>
+            </section>
+    
+            <section>
+                <h2>CALCULADORA</h2>
+                <p>Proyecto sencillo de una calculadora con operaciones aritméticas básicas.</p>
+                <p>Contiene una serie de botones ordenados mediante HTML y CSS, programados con eventos y POO con <b>JavaScript</b>.</p>
+                <p><b>Tecnologías usadas:</b> HTML, CSS, Javascript</p>
+                <div class="btnsAcciones">
+                    <button class=""><a target="_blank" href="https://csscurse.netlify.app/proyectos/calculadora">ACCEDER &raquo;</a></button>
+                    <button onclick="MostrarImagenes('Calculadora')" class="">VER &raquo;</button>
+                </div>
+            </section>
+    
+            <section>
+                <h2>CRONÓMETRO</h2>
+                <p>Proyecto sencillo de un crónometro para uso personal.</p>
+                <p>Contiene interfaz sencilla con íconos por botones
+                   programados con eventos con <b>JavaScript</b>.</p>
+                <p><b>Tecnologías usadas:</b> HTML, CSS, JavaScript</p>
+                <div class="btnsAcciones">
+                    <button class=""><a target="_blank" href="https://rdmcronometro.netlify.app/">ACCEDER &raquo;</a></button>
+                    <button onclick="MostrarImagenes('Cronometro')" class="">VER &raquo;</button>
+                </div>
+            </section>
+    
+            <section>
+                <h2>GALERÍA GRID</h2>
+                <p>Proyecto sencillo de una galería de imágenes, con propósitos autodidactas del uso de la propiedad GRID.</p>
+                <p>Contiene una serie de imágenes como representación de una galería, junto con eventos
+                    programados en <b>JavaScript</b> para la ampliación de las mismas.
+                </p>
+                <p><b>Tecnologías usadas:</b> HTML, CSS, JavaScript</p>
+                <div class="btnsAcciones">
+                    <button class=""><a target="_blank" href="https://csscurse.netlify.app/galeria">ACCEDER &raquo;</a></button>
+                    <button onclick="MostrarImagenes('GaleriaGrid')" class="">VER &raquo;</button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>	
+        <div class="footer">        		
+            <div>
+                <span>Contacto</span>
+            </div>
+            <div>				
+                <a href="#" class="fa-brands fa-facebook" target="_BLANK"></a>
+                <a href="#" class="fa-brands fa-tiktok" target="_BLANK"></a>
+                <a href="#" class="fa-brands fa-instagram" target="_BLANK"></a>
+                <a href="tel:+7441940516" class="fa-brands fa-whatsapp" target="_BLANK"></a>
+                <a href="#" class="fa-brands fa-square-youtube" target="_BLANK"></a>
+            </div>            
+        </div>
+    </footer>
+
+    <!-- <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script> -->
+</body>
+</html>

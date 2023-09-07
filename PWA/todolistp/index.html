@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
+	<link rel="manifest" href="./manifest.json">
+	
+	<meta name="theme-color" content="#292e29">
+    <meta name="MobileOptimized" content="width">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="shortcut icon" type="image/png" href="./media/ico/iconstodo/icon-512x512.png">
+    <link rel="apple-touch-icon" href="./media/ico/iconstodo/icon-512x512.png">
+    <link rel="apple-touch-startup-image" href="./media/ico/iconstodo/icon-512x512.png">
+
+    <link rel="apple-touch-icon" href="./media/ico/iconstodo/icon-72x72.png" />
+    <link rel="apple-touch-icon" href="./media/ico/iconstodo/icon-96x96.png" />
+    <link rel="apple-touch-icon" href="./media/ico/iconstodo/icon-128x128.png" />
+    <link rel="apple-touch-icon" href="./media/ico/iconstodo/icon-144x144.png" />
+    <link rel="apple-touch-icon" href="./media/ico/iconstodo/icon-152x152.png" />
+    <link rel="apple-touch-icon" href="./media/ico/iconstodo/icon-192x192.png" />
+    <link rel="apple-touch-icon" href="./media/ico/iconstodo/icon-384x384.png" />
+    <link rel="apple-touch-icon" href="./media/ico/iconstodo/icon-512x512.png" />
+
+    <meta name="apple-mobile-web-app-status-bar" content="#292e29" />
+
+	<link rel="icon" href="./media/ico/carrito.ico">	
+	<link rel="stylesheet" type="text/css" href="./todolist.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+	<link rel='stylesheet' href='https://unpkg.com/emoji.css/dist/emoji.min.css'>
+	<script src="https://kit.fontawesome.com/62ea397d3a.js" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://kit.fontawesome.com/c36a560a32.js" crossorigin="anonymous"></script>
+	
+	<script type="text/javascript" src="./Scripts/index.js" defer></script>
+    <script type="text/javascript" src="./Scripts/Background.js" defer></script>
+	<script type="text/javascript" src="./regist_serviceWorker.js" defer></script>
+	
+	<title>To Do List</title>
+</head>
+
+<body>
+	<header id="header">
+        <div class="headerContenedor">
+            <div class="headerContenedorTituloIMG">
+                <h2>LISTA DE TAREAS</h2>
+                <img src="./media/img/TodoListIcon.png" alt="">
+            </div>					
+            <div class="headerContenedorBtn">
+                <button id="MenuBtn" class="fa-solid fa-bars"></button>
+            </div>
+        </div>        
+	</header>
+
+    <div id="MenuOpciones" class="MenuOpciones">
+        <ul>
+            <li><span>CONFIGURACIÓN</span></li>
+            <li><button id="CambiarFondoBtn">CAMBIAR FONDO</button></li>            
+            <li><button id="CambiarTexturaMenuBtn">TEXTURA MENÚ</button></li>
+            <li><button id="CambiarTextoCabeceraBtn">TEXTO CABECERA</button></li>
+            <li><button id="CambiarTextoNotasBtn" class="LastButton">TEXTO NOTAS</button></li>
+            <!-- <li><button></button></li> -->
+        </ul>            
+    </div>
+
+    <main>
+        <div id="cajaLista">
+            <div class="imgNotaDiv">
+                <img src="./media/img/TodoListIcon.png" alt=""> 
+            </div>
+			
+            <div class="formUl">
+				<div class="formularioDiv">
+					<input placeholder="Escribe una tarea..." type="text" id="inputItem">
+					
+					<button id="btnAg" class="fa-solid fa-plus"></button>
+				</div>
+				
+                <ul class="Ul">
+
+                </ul>
+				
+				<div class ="empty">
+                    <span>Está muy vacío por aquí.</span>
+					<span class="ec ec-ghost"></span>
+				</div>               
+            </div>			
+        </div>		
+    </main>
+
+    <footer>	
+        <div class="footer">        		
+            <div>
+                <span>Contacto</span>
+            </div>
+            <div>				
+                <a href="#" class="fa-brands fa-facebook"  target="_BLANK"></a>
+                <a href="#" class="fa-brands fa-tiktok"  target="_BLANK"></a>
+                <a href="#" class="fa-brands fa-instagram"  target="_BLANK"></a>
+                <a href="tel:+7441940516" class="fa-brands fa-whatsapp"  target="_BLANK"></a>
+                <a href="#" class="fa-brands fa-square-youtube" target="_BLANK"></a>
+            </div>
+            <div>
+                <div class="CheckContainer">
+                    <div>
+                        <input id="CheckBG" type="checkbox"/>
+                    </div>
+                    <div>
+                        <span id="TextCheck">Ocultar</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>	
+	
+    <dialog id="ModalDialog">
+        <div class="ModalCambioBG">
+            <div>
+                <h3>CAMBINADO IMAGEN DE FONDO</h3>
+            </div>            
+            <div>
+                <p>Carga tu imagen para cambiar el fondo y obtener una vista previa.</p>
+            </div>
+            <div>
+                <img id="ImgVistaPrevia_1" src="https://i.pinimg.com/280x280_RS/42/03/a5/4203a57a78f6f1b1cc8ce5750f614656.jpg">
+            </div>
+            <div>
+                <input id="InputImg" type="file">
+            </div>
+            <div>
+                <button id="UploadImgBtn">CARGAR</button>
+            </div>
+            <div>
+                <button id="UploadCancel">CANCELAR</button>
+            </div> 
+            <div>
+                <button id="BorrarBGBtn">BORRAR FONDO</button>
+            </div>           
+        </div>`;
+    </dialog>
+</body>
+</html>
