@@ -1,0 +1,91 @@
+*{
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #111;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10vh 80vh 10vh;
+    font-family: sans-serif;
+}
+
+header{
+    border-bottom-left-radius: 50px;
+    background-color: #fff5;
+    display: flex;
+    grid-row: 1/2;
+    height: 10vh;
+}
+
+header .h1{
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    color: #fff;
+    justify-content: center;    
+}
+
+main{
+    min-height: 80vh;
+    grid-row: 2/3;
+}
+
+footer{
+    display: flex;
+    height: 10vh;
+    color: #fff;
+    grid-row: 3/4;
+    justify-content: center;
+}
+
+footer div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.iFrame{
+    padding: 20px 20px 20px 5px;
+}
+
+.contenidoBanda{
+    margin: 20px auto 20px auto;
+}
+
+.tituloBanda{
+    background-color: #fff2;
+    display: flex;
+    font-size: 35px;
+    height: 50px;
+    color: #fff;
+    border-bottom: 1px solid #fff5;
+    border-top-right-radius: 80px;
+    border-top-left-radius: 10px;
+    justify-content: center;
+}
+
+.cancionesBanda{
+    background-color: #fff2;
+    display: grid;
+    padding: 25px;
+    margin: auto;    
+    gap: 15px;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: 1fr;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 80px;
+}
+
+.iframePersonalizado{    
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    border-radius:12px;
+    border: 1px solid #0000;  
+}
+
